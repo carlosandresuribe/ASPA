@@ -1,0 +1,219 @@
+:root{
+    --verde:#219268;
+    --amarillo:#e7af00;
+    --gris:#6D6D6D;
+    --blanco:#FFF;
+    
+}
+img{
+    width:100%;
+    height: auto;
+}
+iframe{
+    width: 100%;
+    height: 40rem;
+}
+h2{
+  font-size:2.5rem;
+}
+h3{
+  font-size: 1.4rem;
+}
+.contenedor-imagen
+{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+   
+}
+.aspa-txt {
+    text-align: center;
+}
+.cont-moneda {
+   display: grid;
+    grid-template-columns: 1fr 1fr; /*columnas para el grid*/
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+.moneda{
+    width:20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border:1px solid red;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transition:all .5s;
+}
+
+
+
+
+@keyframes cardFlip {
+  0% {
+    transform: rotateZ(0deg) rotateY(180deg);
+  } 
+  50% {
+    transform: rotateZ(-10deg) rotateY(90deg);
+  }
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg);
+  }
+  
+}
+
+@keyframes cardUnFlip {
+  0% {
+    transform: rotateZ(0deg) rotateY(0deg);
+  } 
+  50% {
+    transform: rotateZ(-10deg) rotateY(90deg);
+  }
+  100% {
+    transform: rotateZ(0deg) rotateY(180deg);
+  }
+  
+}
+/** Utilidades*/
+.boton{
+  padding: .3rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.4);    
+}
+.boton-primario{
+  background-color:var(--amarillo);
+  
+}
+.item::first-letter{
+ 
+}
+
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;   
+  perspective: 700px; /* Remove this if you don't want the 3D effect */
+  
+}
+.titulo{
+  text-align: center;
+  padding: 1rem; 
+  border:1px solid var(--gris);
+  color:var(--blanco);
+}
+.titulo-a{
+  background-color: var(--amarillo);
+}
+.titulo-v{
+  background-color: var(--verde);
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-image: url(./img/personajes.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.donador
+{
+  background-position: -34rem 0;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: var(--blanco);
+  color: var(--gris);
+  transform: rotateY(180deg);
+  text-align: left;  
+  box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+  border-radius: 1rem;
+
+}
+.cont-beneficios{
+  padding: 0 2rem;
+} 
+.beneficios{
+  line-height: 1.8;  
+}
+.cabecera{
+  padding: 1rem;
+  background-color:var(--verde);
+  color:var(--blanco);
+  text-align: center;
+  border-radius: 1rem 1rem 0 0;
+}
+.cabecera h2 {
+  border-bottom: 1px solid var(--blanco);
+  margin-bottom: 1rem;
+}
+.obtienes{
+  padding: .5rem 0;
+}
+.donar{
+  font-size: 1.5rem;
+}
+.cabecera span {
+    transition:all .5s;
+}
+.cabecera span a{
+  text-decoration: none;
+  color:var(--blanco);
+
+}
+.cabecera span.boton:hover {
+  transform: scale(1.1);
+  letter-spacing: 2px;
+}
+.valor{
+    /* text-shadow: 2px 2px 5px rgba(0,0,0,.4); */
+    font-size: 2rem;
+    font-weight: 300;
+}
+.valor:after{
+  content:'';
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  background-image: url(./img/flechas.svg);
+  background-repeat: no-repeat;
+  background-size: 64px;
+  margin-left: .5rem;
+}
+.donacion {
+  display: flex;
+}
+.donacion span{
+  flex:1;
+  justify-content: space-between;
+  margin-bottom: .7rem;
+}
