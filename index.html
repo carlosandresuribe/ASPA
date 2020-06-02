@@ -6,21 +6,115 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <header class="container-md bg-primary text-white">
-        <h1 class="">Hello World</h1>
-        <div class="">
-            <h2 class="">Donaciones</h2>
-            <div class="row d-flex justify-content-center">
-                <div class="col text-center">columna 1</div>
-                <div class="col text-center">columna 2</div>
-                <div class="col text-center">columna 3</div>
+        <h1 class="">Hello World</h1>        
+    </header>
+    <div class="container-md">
+        <h2 class="">Donaciones</h2>
+        <div class="aspa-social text-center">            
+            <div class="contenedor-imagen ">
+                <img src="img/lineas_negocio_aspa-06.jpg" alt="">
+            </div>
+            <!-- <div class="contenedor-video container-fluid">                
+                    <iframe src="https://www.youtube.com/embed/4gTpJNr_u5Y" frameborder="0" allowfullscreen class="d-flex justify-content-center" >              
+            </div>             -->
+            <div class="contenedor-animacion">
+                <video controls>
+                    <source src="img/lineas_negocio_aspa-06.jpg">
+                </video>
             </div>
         </div>
-    </header>
-    <footer></footer>    
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+        <div class="aspa-txt">
+            <p>
+                Curabitur quis lorem lobortis ligula feugiat hendrerit. Integer sed ex a arcu blandit porttitor Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae
+                sint et molestiae non recusandae
+            </p>
+        </div>
+        <div class="row  cont-moneda">
+                
+                <div class="flip-card">
+                    <h2 class="titulo titulo-a">Héroe</h2>
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front heroe">                           
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="cabecera">
+                                <h2>Nuestros Héroes</h2>
+                                <div class="donar">
+                                    <span class="valor">$600.000</span>
+                                    <span class="boton boton-primario"><a href="#">Donar ahora!</a></span>
+                                </div>
+                            </div>
+                            <div class="cont-beneficios">
+                                <div class="obtienes">
+                                    <h3>Obtienes:</h3>
+                                </div>
+                                <ol class="beneficios">
+                                    <li class="item">Descuento tributario de $150.000 en el pago del impuesto de renta para el año gravable 2020 (aplicable para la
+                                    declaración que se presenta en 2021)</li>
+                                    <li class="item">Certificado de donación</li>
+                                    <li class="item">Incluye cuota de sostenimiento del año 2020 ($360.000)</li>
+                                    <li class="item">Ticket de acceso al Simposio Virtual
+                                    Latinoamericano – ASPA 2020.</li>
+                                    <li class="item">Harás parte del mural “Nuestros héroes ASPA”, un reconocimiento visible y un recuerdo permanente por tu colaboración y
+                                    compromiso para con la academia en los momentos dificiles por las que atraviesa la humanidad</li>
+                                </ol>
+                            </div>    
+                        </div>
+                    </div>
+                </div>                
+                <div class="flip-card">
+                    <h2 class="titulo titulo-v">Benefactor</h2>
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front donador">
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="cabecera">
+                                <h2>Nuestros Benefactores</h2>
+                                <div class="donar">
+                                    <div class="donacion">
+                                        <span class="valor">$50.000</span>
+                                        <span class="boton boton-primario"><a href="#">Donar ahora!</a></span>
+                                    </div>
+                                    <div class="donacion">
+                                        <span class="valor">$100.000</span>
+                                        <span class="boton boton-primario"><a href="#">Donar ahora!</a></span>
+                                    </div>
+                                    <div class="donacion">
+                                        <span class="valor">Otro valor</span>
+                                        <span class="boton boton-primario"><a href="#">Donar ahora!</a></span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="cont-beneficios">
+                                <div class="obtienes">
+                                    <h3>Obtienes:</h3>
+                                </div>
+                                <ol class="beneficios">
+                                    <li class="item">Descuento tributario del 25% del valor de la donación</li>
+                                    <li class="item">Certificado de donación</li>
+                                    <li class="item">Harás parte del mural “Nuestros benefactores ASPA”</li>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>        
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="./scripts.js"></script>    
 </body>
 </html>
+
