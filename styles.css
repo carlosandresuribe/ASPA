@@ -217,3 +217,11 @@ h3{
   justify-content: space-between;
   margin-bottom: .7rem;
 }
+.contenedor-imagen{
+  padding: 4rem;
+  margin:2rem auto;
+  border:1px solid var(--verde);
+}
+.contenedor-imagen img{
+  padding: 4rem;
+}
